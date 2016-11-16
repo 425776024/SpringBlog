@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - blogdb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="blogdb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="blog"/>
+    <schema id="3" name="client_test_db"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="performance_schema"/>
+    <schema id="7" name="springdemo"/>
+    <table id="8" parent="1" name="category">
+      <comment>categorytable</comment>
+    </table>
+    <table id="9" parent="1" name="comment">
+      <comment>comment table</comment>
+    </table>
+    <table id="10" parent="1" name="hello">
+      <comment>hello table for test</comment>
+    </table>
+    <table id="11" parent="1" name="post">
+      <comment>post table</comment>
+    </table>
+    <table id="12" parent="1" name="user">
+      <comment>user table</comment>
+    </table>
+    <column id="13" parent="8" name="cat_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="14" parent="8" name="cat_name">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="15" parent="8" name="cat_description">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="16" parent="8" name="cat_parent">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="17" parent="8" name="PRIMARY">
+      <columns>cat_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="9" name="comment_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="19" parent="9" name="post_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="20" parent="9" name="comment_author">
+      <data-type>tinytext|0</data-type>
+    </column>
+    <column id="21" parent="9" name="comment_author_email">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="22" parent="9" name="comment_date">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="23" parent="9" name="comment_content">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="24" parent="9" name="comment_parent">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="25" parent="9" name="user_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="26" parent="9" name="PRIMARY">
+      <columns>comment_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="27" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="28" parent="10" name="name">
+      <data-type>varchar(256)|0</data-type>
+    </column>
+    <column id="29" parent="10" name="remarks">
+      <data-type>varbinary(256)|0</data-type>
+    </column>
+    <key id="30" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="31" parent="11" name="post_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="32" parent="11" name="author_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="33" parent="11" name="post_date">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="34" parent="11" name="post_content">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="35" parent="11" name="post_title">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="36" parent="11" name="post_status">
+      <comment>0:draft
+            1:publish
+            2:private
+
+</comment>
+      <data-type>int(8)|0</data-type>
+    </column>
+    <column id="37" parent="11" name="comment_status">
+      <comment>0:closed
+            1:open
+            3:registered_only</comment>
+      <data-type>int(8)|0</data-type>
+    </column>
+    <column id="38" parent="11" name="category_id">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="39" parent="11" name="post_modified_date">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="40" parent="11" name="comment_count">
+      <data-type>int(128)|0</data-type>
+    </column>
+    <key id="41" parent="11" name="PRIMARY">
+      <columns>post_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="42" parent="12" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="43" parent="12" name="user_name">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="44" parent="12" name="user_email">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="45" parent="12" name="user_qq">
+      <data-type>varchar(16)|0</data-type>
+    </column>
+    <column id="46" parent="12" name="password">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="47" parent="12" name="user_status">
+      <data-type>int(12)|0</data-type>
+    </column>
+    <key id="48" parent="12" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
