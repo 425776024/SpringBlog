@@ -1,6 +1,6 @@
-package com.xin.repository;
+package com.springmvchibernate.repository;
 
-import com.xin.model.User;
+import com.springmvchibernate.model.User;
 import org.springframework.dao.DataAccessException;
 
 import java.util.Collection;

@@ -1,11 +1,11 @@
-package com.xin.web;
+package com.springmvchibernate.web;
 
 
-import com.xin.model.Category;
-import com.xin.model.Comment;
-import com.xin.model.Post;
-import com.xin.model.User;
-import com.xin.service.SpringBlogService;
+import com.springmvchibernate.model.Category;
+import com.springmvchibernate.model.Comment;
+import com.springmvchibernate.model.Post;
+import com.springmvchibernate.model.User;
+import com.springmvchibernate.service.SpringBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

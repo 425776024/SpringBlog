@@ -1,7 +1,7 @@
-package com.xin.repository.impl;
+package com.springmvchibernate.repository.impl;
 
-import com.xin.model.User;
-import com.xin.repository.UserRepo;
+import com.springmvchibernate.model.User;
+import com.springmvchibernate.repository.UserRepo;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

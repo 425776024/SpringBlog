@@ -1,7 +1,7 @@
-package com.xin.repository.impl;
+package com.springmvchibernate.repository.impl;
 
-import com.xin.model.Category;
-import com.xin.repository.CategoryRepo;
+import com.springmvchibernate.model.Category;
+import com.springmvchibernate.repository.CategoryRepo;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

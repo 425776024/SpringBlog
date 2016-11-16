@@ -1,4 +1,4 @@
-package com.xin.model;
+package com.springmvchibernate.model;
 
 /**
  * Author: Xin

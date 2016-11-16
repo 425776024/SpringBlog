@@ -1,6 +1,6 @@
-package com.xin.repository;
+package com.springmvchibernate.repository;
 
-import com.xin.model.Category;
+import com.springmvchibernate.model.Category;
 import org.springframework.dao.DataAccessException;
 
 import java.util.Collection;

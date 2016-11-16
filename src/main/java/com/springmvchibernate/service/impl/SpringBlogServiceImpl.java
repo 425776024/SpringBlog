@@ -1,22 +1,20 @@
-package com.xin.service.impl;
+package com.springmvchibernate.service.impl;
 
-import com.xin.model.Category;
-import com.xin.model.Comment;
-import com.xin.model.Post;
-import com.xin.model.User;
-import com.xin.repository.CategoryRepo;
-import com.xin.repository.CommentRepo;
-import com.xin.repository.PostRepo;
-import com.xin.repository.UserRepo;
-import com.xin.service.SpringBlogService;
+import com.springmvchibernate.model.Category;
+import com.springmvchibernate.model.Comment;
+import com.springmvchibernate.model.Post;
+import com.springmvchibernate.model.User;
+import com.springmvchibernate.repository.CategoryRepo;
+import com.springmvchibernate.repository.CommentRepo;
+import com.springmvchibernate.repository.PostRepo;
+import com.springmvchibernate.repository.UserRepo;
+import com.springmvchibernate.service.SpringBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Author: Xin

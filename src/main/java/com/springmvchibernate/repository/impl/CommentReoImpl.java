@@ -1,7 +1,7 @@
-package com.xin.repository.impl;
+package com.springmvchibernate.repository.impl;
 
-import com.xin.model.Comment;
-import com.xin.repository.CommentRepo;
+import com.springmvchibernate.model.Comment;
+import com.springmvchibernate.repository.CommentRepo;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

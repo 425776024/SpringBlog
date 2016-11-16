@@ -1,13 +1,12 @@
-package com.xin.service;
+package com.springmvchibernate.service;
 
-import com.xin.model.Category;
-import com.xin.model.Comment;
-import com.xin.model.Post;
-import com.xin.model.User;
+import com.springmvchibernate.model.Category;
+import com.springmvchibernate.model.Comment;
+import com.springmvchibernate.model.Post;
+import com.springmvchibernate.model.User;
 import org.springframework.dao.DataAccessException;
 
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Author: Xin

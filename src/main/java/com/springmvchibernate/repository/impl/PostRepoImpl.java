@@ -1,7 +1,7 @@
-package com.xin.repository.impl;
+package com.springmvchibernate.repository.impl;
 
-import com.xin.model.Post;
-import com.xin.repository.PostRepo;
+import com.springmvchibernate.model.Post;
+import com.springmvchibernate.repository.PostRepo;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

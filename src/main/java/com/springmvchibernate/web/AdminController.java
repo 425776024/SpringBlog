@@ -1,7 +1,7 @@
-package com.xin.web;
+package com.springmvchibernate.web;
 
-import com.xin.model.*;
-import com.xin.service.SpringBlogService;
+import com.springmvchibernate.model.*;
+import com.springmvchibernate.service.SpringBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
