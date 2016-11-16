@@ -1,7 +1,7 @@
 #SpringBlog
 
 This is a tiny blog system based on SpringMVC and Hibernate,just for learning spring.
-
+这是一个基于SpringMVC和Hibernate的小型博客系统，仅用于学习spring。
 ##Use:
 
 1. Spring IoC container
