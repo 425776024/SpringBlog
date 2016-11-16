@@ -15,10 +15,10 @@
         <property name="hibernate.cache.use_query_cache">true</property>
         <property name="hibernate.connection.useUnicode">true</property>
         <property name="hibernate.connection.characterEncoding">UTF-8</property>
-        <class-cache class="com.xin.model.Category" usage="read-write"/>
-        <class-cache class="com.xin.model.Comment" usage="read-write"/>
-        <class-cache class="com.xin.model.Post" usage="read-write"/>
-        <class-cache class="com.xin.model.User" usage="read-write"/>
+        <class-cache class="com.springmvchibernate.model.Category" usage="read-write"/>
+        <class-cache class="com.springmvchibernate.model.Comment" usage="read-write"/>
+        <class-cache class="com.springmvchibernate.model.Post" usage="read-write"/>
+        <class-cache class="com.springmvchibernate.model.User" usage="read-write"/>
 
     </session-factory>
 

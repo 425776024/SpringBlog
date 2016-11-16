@@ -5,8 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <context:component-scan base-package="com.xin.repository"/>
-    <context:component-scan base-package="com.xin.service"/>
+    <context:component-scan base-package="com.springmvchibernate.repository"/>
+    <context:component-scan base-package="com.springmvchibernate.service"/>
     <context:property-placeholder location="classpath:config/data-access.properties"/>
 
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource">
@@ -18,7 +18,7 @@
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan" value="com.xin.model"/>
+        <property name="packagesToScan" value="com.springmvchibernate.model"/>
         <property name="configLocation" value="classpath:/config/hibernate.cfg.xml"/>
 
     </bean>

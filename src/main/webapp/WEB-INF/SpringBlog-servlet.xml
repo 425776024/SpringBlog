@@ -10,7 +10,7 @@
 
 
     <mvc:annotation-driven/>
-    <context:component-scan base-package="com.xin.web"/>
+    <context:component-scan base-package="com.springmvchibernate.web"/>
     <!-- 视图解析-->
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
