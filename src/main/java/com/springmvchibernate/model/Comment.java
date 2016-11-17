@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * User: Xin
- * Date: 14-5-4
- * Time: 下午10:27
+ * 评论
  */
 @Entity
 public class Comment {
@@ -14,6 +12,17 @@ public class Comment {
     public Comment() {
     }
 
+    /**
+     *
+     * @param commentId 评论id
+     * @param postId    帖子id
+     * @param commentAuthor 评论者
+     * @param commentAuthorEmail    评论者邮箱
+     * @param commentDate   评论时间
+     * @param commentContent    评论内容
+     * @param commentParent 评论的上级
+     * @param userId    用户id
+     */
     public Comment(Long commentId, Long postId, String commentAuthor, String commentAuthorEmail, Date commentDate, String commentContent, Long commentParent, Long userId) {
         this.commentId = commentId;
         this.postId = postId;
@@ -27,7 +36,7 @@ public class Comment {
 
     private Long commentId;
 
-    @javax.persistence.Column(name = "comment_id")
+    @Column(name = "comment_id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getCommentId() {
@@ -40,7 +49,7 @@ public class Comment {
 
     private Long postId;
 
-    @javax.persistence.Column(name = "post_id")
+    @Column(name = "post_id")
     @Basic
     public Long getPostId() {
         return postId;
@@ -52,7 +61,7 @@ public class Comment {
 
     private String commentAuthor;
 
-    @javax.persistence.Column(name = "comment_author")
+    @Column(name = "comment_author")
     @Basic
     public String getCommentAuthor() {
         return commentAuthor;
@@ -64,7 +73,7 @@ public class Comment {
 
     private String commentAuthorEmail;
 
-    @javax.persistence.Column(name = "comment_author_email")
+    @Column(name = "comment_author_email")
     @Basic
     public String getCommentAuthorEmail() {
         return commentAuthorEmail;
@@ -76,7 +85,7 @@ public class Comment {
 
     private Date commentDate;
 
-    @javax.persistence.Column(name = "comment_date")
+    @Column(name = "comment_date")
     @Basic
     public Date getCommentDate() {
         return commentDate;
@@ -88,7 +97,7 @@ public class Comment {
 
     private String commentContent;
 
-    @javax.persistence.Column(name = "comment_content")
+    @Column(name = "comment_content")
     @Basic
     public String getCommentContent() {
         return commentContent;
@@ -100,7 +109,7 @@ public class Comment {
 
     private Long commentParent;
 
-    @javax.persistence.Column(name = "comment_parent")
+    @Column(name = "comment_parent")
     @Basic
     public Long getCommentParent() {
         return commentParent;
@@ -112,7 +121,7 @@ public class Comment {
 
     private Long userId;
 
-    @javax.persistence.Column(name = "user_id")
+    @Column(name = "user_id")
     @Basic
     public Long getUserId() {
         return userId;

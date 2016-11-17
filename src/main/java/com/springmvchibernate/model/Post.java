@@ -5,9 +5,7 @@ import java.util.Date;
 
 
 /**
- * User: Xin
- * Date: 14-5-4
- * Time: 下午10:27
+ * 帖子
  */
 @Entity
 public class Post {
@@ -15,6 +13,19 @@ public class Post {
     public Post() {
     }
 
+    /**
+     *
+     * @param postId 帖子id
+     * @param authorId  作者id
+     * @param postDate  创建时间
+     * @param postContent   内容
+     * @param postTitle 标题
+     * @param postStatus    帖子状态
+     * @param commentStatus 评论状态
+     * @param categoryId    分类板块id
+     * @param postModifiedDate  帖子修改时间
+     * @param commentCount  评论数
+     */
     public Post(Long postId, Long authorId, Date postDate, String postContent, String postTitle, Integer postStatus, Integer commentStatus, Long categoryId, Date postModifiedDate, Integer commentCount) {
         this.postId = postId;
         this.authorId = authorId;
@@ -30,7 +41,7 @@ public class Post {
 
     private Long postId;
 
-    @javax.persistence.Column(name = "post_id")
+    @Column(name = "post_id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getPostId() {
@@ -43,7 +54,7 @@ public class Post {
 
     private Long authorId;
 
-    @javax.persistence.Column(name = "author_id")
+    @Column(name = "author_id")
     @Basic
     public Long getAuthorId() {
         return authorId;
@@ -55,7 +66,7 @@ public class Post {
 
     private Date postDate;
 
-    @javax.persistence.Column(name = "post_date")
+    @Column(name = "post_date")
     @Basic
     public Date getPostDate() {
         return postDate;
@@ -67,7 +78,7 @@ public class Post {
 
     private String postContent;
 
-    @javax.persistence.Column(name = "post_content")
+    @Column(name = "post_content")
     @Basic
     public String getPostContent() {
         return postContent;
@@ -79,7 +90,7 @@ public class Post {
 
     private String postTitle;
 
-    @javax.persistence.Column(name = "post_title")
+    @Column(name = "post_title")
     @Basic
     public String getPostTitle() {
         return postTitle;
@@ -91,7 +102,7 @@ public class Post {
 
     private Integer postStatus;
 
-    @javax.persistence.Column(name = "post_status")
+    @Column(name = "post_status")
     @Basic
     public Integer getPostStatus() {
         return postStatus;
@@ -103,7 +114,7 @@ public class Post {
 
     private Integer commentStatus;
 
-    @javax.persistence.Column(name = "comment_status")
+    @Column(name = "comment_status")
     @Basic
     public Integer getCommentStatus() {
         return commentStatus;
@@ -115,7 +126,7 @@ public class Post {
 
     private Long categoryId;
 
-    @javax.persistence.Column(name = "category_id")
+    @Column(name = "category_id")
     @Basic
     public Long getCategoryId() {
         return categoryId;
@@ -127,7 +138,7 @@ public class Post {
 
     private Date postModifiedDate;
 
-    @javax.persistence.Column(name = "post_modified_date")
+    @Column(name = "post_modified_date")
     @Basic
     public Date getPostModifiedDate() {
         return postModifiedDate;
@@ -139,7 +150,7 @@ public class Post {
 
     private Integer commentCount;
 
-    @javax.persistence.Column(name = "comment_count")
+    @Column(name = "comment_count")
     @Basic
     public Integer getCommentCount() {
         return commentCount;

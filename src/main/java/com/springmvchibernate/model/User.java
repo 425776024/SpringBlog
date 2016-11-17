@@ -3,9 +3,7 @@ package com.springmvchibernate.model;
 import javax.persistence.*;
 
 /**
- * User: Xin
- * Date: 14-5-4
- * Time: 下午10:27
+ * 用户表
  */
 @Entity
 public class User {
@@ -13,6 +11,15 @@ public class User {
     public User() {
     }
 
+    /**
+     *
+     * @param userId 用户Id
+     * @param userName  用户名
+     * @param userEmail 邮箱
+     * @param userQq qq
+     * @param password 密码
+     * @param userStatus 状态
+     */
     public User(Long userId, String userName, String userEmail, String userQq, String password, Integer userStatus) {
         this.userId = userId;
         this.userName = userName;
@@ -24,7 +31,7 @@ public class User {
 
     private Long userId;
 
-    @javax.persistence.Column(name = "user_id")
+    @Column(name = "user_id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getUserId() {
@@ -37,7 +44,7 @@ public class User {
 
     private String userName;
 
-    @javax.persistence.Column(name = "user_name")
+    @Column(name = "user_name")
     @Basic
     public String getUserName() {
         return userName;
@@ -49,7 +56,7 @@ public class User {
 
     private String userEmail;
 
-    @javax.persistence.Column(name = "user_email")
+    @Column(name = "user_email")
     @Basic
     public String getUserEmail() {
         return userEmail;
@@ -61,7 +68,7 @@ public class User {
 
     private String userQq;
 
-    @javax.persistence.Column(name = "user_qq")
+    @Column(name = "user_qq")
     @Basic
     public String getUserQq() {
         return userQq;
@@ -73,7 +80,7 @@ public class User {
 
     private String password;
 
-    @javax.persistence.Column(name = "password")
+    @Column(name = "password")
     @Basic
     public String getPassword() {
         return password;
@@ -85,7 +92,7 @@ public class User {
 
     private Integer userStatus;
 
-    @javax.persistence.Column(name = "user_status")
+    @Column(name = "user_status")
     @Basic
     public Integer getUserStatus() {
         return userStatus;

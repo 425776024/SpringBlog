@@ -3,7 +3,7 @@ package com.springmvchibernate.model;
 import javax.persistence.*;
 
 /**
- *
+ *分类表
  */
 @Entity
 public class Category {
@@ -11,6 +11,13 @@ public class Category {
     public Category() {
     }
 
+    /**
+     *
+     * @param catId 分类id
+     * @param catName   分类名称
+     * @param catDescription    分类描述
+     * @param catParent 分类父级
+     */
     public Category(Long catId, String catName, String catDescription, Long catParent) {
         this.catId = catId;
         this.catName = catName;
@@ -20,7 +27,7 @@ public class Category {
 
     private Long catId;
 
-    @javax.persistence.Column(name = "cat_id")
+    @Column(name = "cat_id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getCatId() {
@@ -33,7 +40,7 @@ public class Category {
 
     private String catName;
 
-    @javax.persistence.Column(name = "cat_name")
+    @Column(name = "cat_name")
     @Basic
     public String getCatName() {
         return catName;
@@ -45,7 +52,7 @@ public class Category {
 
     private String catDescription;
 
-    @javax.persistence.Column(name = "cat_description")
+    @Column(name = "cat_description")
     @Basic
     public String getCatDescription() {
         return catDescription;
@@ -57,7 +64,7 @@ public class Category {
  
     private Long catParent;
 
-    @javax.persistence.Column(name = "cat_parent")
+    @Column(name = "cat_parent")
     @Basic
     public Long getCatParent() {
         return catParent;
