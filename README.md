@@ -7,7 +7,7 @@ This is a tiny blog system based on SpringMVC and Hibernate,just for learning sp
 **1. Spring IoC container**
 _2. Spring mvc for web_
 ~~3. Hibernate for mysql database access~~
-6. [Boostrap](www.baidu.com)
+6. [Boostrap](http://www.baidu.com)
 7. **Jquery**
 
 ##使用方法
