@@ -1,10 +1,8 @@
 package com.springmvchibernate.model;
 
 /**
- * Author: Xin
- * Date: 14-5-7
- * Time: 下午3:50
- */
+* 博客常数
+* **/
 public  final class BlogConstant {
 
     public static final byte RETURN_CODE_SUCC = 1;

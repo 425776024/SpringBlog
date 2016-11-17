@@ -3,9 +3,7 @@ package com.springmvchibernate.model;
 import javax.persistence.*;
 
 /**
- * User: Xin
- * Date: 14-5-4
- * Time: 下午10:27
+ *
  */
 @Entity
 public class Category {
