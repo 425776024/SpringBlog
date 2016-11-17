@@ -15,4 +15,4 @@ _2. Spring mvc for web_
 2.导入数据库文件/sql/blogdb.sql
 
 ##view//大致如下
-![image](sql/s1/png)
+[image](/sql/s1/png)
